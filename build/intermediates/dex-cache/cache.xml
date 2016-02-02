@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/patrickpro/DEVELOPMENT/CODE/Android Studio/BLEConnect-master/app/libs/httpmime-4.0.3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="dd1973851926925e02d0bbdf4ec0f7435d8292ce">
+        <dex dex="/Users/patrickpro/DEVELOPMENT/CODE/Android Studio/BLEConnect-master/app/build/intermediates/pre-dexed/debug/httpmime-4.0.3-17fde34266ae36b53a586db151aa7e7525db9aae.jar" />
+    </item>
+    <item
+        jar="/Users/patrickpro/DEVELOPMENT/CODE/Android Studio/BLEConnect-master/app/libs/httpclient-4.0.3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="eebf00fc3417031e9fa34afd85ccf11365ca2304">
+        <dex dex="/Users/patrickpro/DEVELOPMENT/CODE/Android Studio/BLEConnect-master/app/build/intermediates/pre-dexed/debug/httpclient-4.0.3-69cd33504f4349fc2a1fcb3de5b215a4a57310eb.jar" />
+    </item>
+    <item
+        jar="/Users/patrickpro/DEVELOPMENT/CODE/Android Studio/BLEConnect-master/app/libs/httpcore-4.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="2cef8e735e306f6be94b609be815854f9cf36eb6">
+        <dex dex="/Users/patrickpro/DEVELOPMENT/CODE/Android Studio/BLEConnect-master/app/build/intermediates/pre-dexed/debug/httpcore-4.0.1-377862fa27ff74ebbc7ccbecc425c41902fb39ab.jar" />
+    </item>
+    <item
+        jar="/Users/patrickpro/DEVELOPMENT/CODE/Android Studio/BLEConnect-master/app/libs/achartengine-1.1.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="9932e3fb9fbe54e80873e77f72a99f79e33b3250">
+        <dex dex="/Users/patrickpro/DEVELOPMENT/CODE/Android Studio/BLEConnect-master/app/build/intermediates/pre-dexed/debug/achartengine-1.1.0-6e9bd2c8e04586adc58026f120a1f59c72b2ca93.jar" />
+    </item>
+    <item
+        jar="/Users/patrickpro/DEVELOPMENT/CODE/Android Studio/BLEConnect-master/app/libs/dropbox-android-sdk-1.5.4.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="2e7a56b4f6e226c233195ba0c9417a9b28183ce5">
+        <dex dex="/Users/patrickpro/DEVELOPMENT/CODE/Android Studio/BLEConnect-master/app/build/intermediates/pre-dexed/debug/dropbox-android-sdk-1.5.4-4ac0f1cf5fcc78d008a3945617f936671a9aff69.jar" />
+    </item>
+    <item
+        jar="/Users/patrickpro/DEVELOPMENT/CODE/Android Studio/BLEConnect-master/app/libs/commons-logging-1.1.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="2d859791fbf7d880591864bd4004d8442a8a3b81">
+        <dex dex="/Users/patrickpro/DEVELOPMENT/CODE/Android Studio/BLEConnect-master/app/build/intermediates/pre-dexed/debug/commons-logging-1.1.1-99b8ee8fa9f5f166b671436fe8ef24014f666cac.jar" />
+    </item>
+    <item
+        jar="/Users/patrickpro/DEVELOPMENT/CODE/Android Studio/BLEConnect-master/app/libs/json_simple-1.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="5e303a03d04e6788dddfa3655272580ae0fc13bb">
+        <dex dex="/Users/patrickpro/DEVELOPMENT/CODE/Android Studio/BLEConnect-master/app/build/intermediates/pre-dexed/debug/json_simple-1.1-443be41242032862427dc0fbd704940c08c11152.jar" />
+    </item>
+
+</items>
