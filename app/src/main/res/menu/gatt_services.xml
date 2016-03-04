@@ -46,10 +46,6 @@
         android:orderInCategory="103"
         android:showAsAction="ifRoom|withText"
         android:title="@string/menu_disconnect"/>
-    <!--<item-->
-        <!--android:id="@+id/menu_resetDB"-->
-        <!--android:orderInCategory="103"-->
-        <!--android:showAsAction="ifRoom|withText"-->
-        <!--android:title="@string/menu_resetDB"/>-->
+
 
 </menu>

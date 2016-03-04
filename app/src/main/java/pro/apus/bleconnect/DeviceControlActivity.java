@@ -3,6 +3,13 @@
  * This software is based on Apache-licensed code from the above.
  * 
  * Copyright (C) 2013 APUS
+ * MODIFIED 2016 by PatrickPro
+ * Changes:
+ *  -logs RR Intervals to the CSV file
+ *  -continues logging even if screen is off
+ *  -keeps screen awake
+ *  -auto connects to BT Device specified in DeviceScanActivity.java
+ *
  *
  *     This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -73,8 +80,7 @@ import java.util.UUID;
 
 import pro.apus.heartrate.R;
 
-//import android.widget.ExpandableListView;
-//import android.widget.SimpleExpandableListAdapter;
+
 
 /**
  * For a given BLE device, this Activity provides the user interface to connect,
@@ -114,10 +120,7 @@ public class DeviceControlActivity extends Activity {
     private String mDeviceName;
     private String mDeviceAddress;
 
-    public void connectAtStartup() {
-        mBluetoothLeService.connect("00:22:D0:6D:E8:B6");
 
-    }
 
     // Code to manage Service lifecycle.
     private final ServiceConnection mServiceConnection = new ServiceConnection() {
@@ -453,10 +456,6 @@ public class DeviceControlActivity extends Activity {
             case R.id.menu_stop_logging:
                 stopLogging();
                 return true;
-//            case R.id.menu_resetDB:
-//                // TODO
-//                resetDB();
-//                return true;
             case android.R.id.home:
                 onBackPressed();
                 return true;
@@ -480,24 +479,6 @@ public class DeviceControlActivity extends Activity {
         });
     }
 
-    private void SaveRRData(String data) {
-        Log.e(TAG, "Got new RR Interval: " + data);
-
-        try {
-            if (data != null) {
-                long time = (new Date()).getTime();
-                float dataElement = Integer.parseInt(data) / 1024f;
-//                float dataElement = Integer.parseInt(data) / 1024f * 1000f;
-
-                appendLog((new Date()).toString() + "," + dataElement);
-
-            }
-        } catch (Exception e) {
-            Log.e(TAG, "Exception while parsing: " + data);
-        }
-
-
-    }
 
     private void displayData(String heartRate, String RRInterval) {
         try {
@@ -508,7 +489,6 @@ public class DeviceControlActivity extends Activity {
                 double rrIntervalFloat = Double.parseDouble(RRInterval) / 1024 * 1000;
                 mCurrentSeries.add(time, dataElement);
                 appendLog((new Date()).toString() + "," + heartRate + "," + rrIntervalFloat);
-                //datasource.createEvent(1, time, dataElement);
                 // Storing last 600 only - should average...
                 while (mCurrentSeries.getItemCount() > 60 * 10) {
                     mCurrentSeries.remove(0);
@@ -662,7 +642,6 @@ public class DeviceControlActivity extends Activity {
             buf.newLine();
             buf.close();
         } catch (IOException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }
@@ -685,10 +664,5 @@ public class DeviceControlActivity extends Activity {
         invalidateOptionsMenu();
         logging = false;
     }
-    private void resetDB() {
-        stopLogging(); // make sure it's not logging anymore
-        // delete DB
 
-
-    }
 }

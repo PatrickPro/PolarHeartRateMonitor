@@ -3,6 +3,12 @@
  * This software is based on Apache-licensed code from the above.
  * 
  * Copyright (C) 2013 APUS
+ * MODIFIED 2016 by PatrickPro
+ * Changes:
+ *  -logs RR Intervals to the CSV file
+ *  -continues logging even if screen is off
+ *  -keeps screen awake
+ *  -auto connects to BT Device specified in DeviceScanActivity.java
  *
  *     This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
